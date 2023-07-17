@@ -1,0 +1,31 @@
+.circle-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
+  .circle-animation {
+    animation-name: circle-anim;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes circle-anim {
+    0% {
+      stroke-dashoffset: 251.2;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .time-text {
+    font-size: 12px;
+    text-anchor: middle;
+  }
+  
